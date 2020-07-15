@@ -44,17 +44,17 @@ let playDoor= (door) =>{
 }
 let randomChoreDoorGenerator= () => {
   let choreDoor = Math.floor(Math.random()*3);
-    if(choreDoor==0){
+    if(choreDoor===0){
       openDoor1=botDoorPath;
       openDoor2= beachDoor;
       openDoor3=spaceDoorPath;
     }
-    if(choreDoor==1){
+    if(choreDoor===1){
       openDoor2=botDoorPath;
       openDoor1= beachDoor;
       openDoor3=spaceDoorPath;
     }
-    if(choreDoor==2){
+    if(choreDoor===2){
       openDoor3=botDoorPath;
       openDoor2= beachDoor;
       openDoor1=spaceDoorPath;
