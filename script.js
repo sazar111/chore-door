@@ -10,6 +10,8 @@ let closedDoorPath="https://s3.amazonaws.com/codecademy-content/projects/chore-d
 let startButton = document.getElementById("start");
 let playing=true;
 
+randomChoreDoorGenerator();
+
 let isBot = (door) =>{
   if(door.src===botDoorPath){
     return true;
@@ -58,7 +60,7 @@ let randomChoreDoorGenerator= () => {
       openDoor1=spaceDoorPath;
     }
 }
-randomChoreDoorGenerator();
+
 doorImage1.onclick = () => {
   if(isClicked(doorImage1)===false && playing){
     doorImage1.src = openDoor1;
@@ -91,4 +93,5 @@ function startRound(){
   doorImage2.src=closedDoorPath;
   startButton.innerHTML='Good LUCK !!!';
   playing=true;
+  randomChoreDoorGenerator();
 }
