@@ -85,7 +85,7 @@ startButton.onclick = () => {
     startRound();
   }
 }
-
+randomChoreDoorGenerator();
 function startRound(){
   numClosedDoors=3;
   doorImage1.src=closedDoorPath;
