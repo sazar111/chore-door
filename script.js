@@ -93,5 +93,5 @@ function startRound(){
   doorImage2.src=closedDoorPath;
   startButton.innerHTML='Good LUCK !!!';
   playing=true;
-  randomChoreDoorGenerator();
+
 }
